@@ -1,0 +1,667 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 0px;
+  color: #4b4b4b;
+  background-color: #3a3a40;
+  opacity: 0.9;
+
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+/* css for styling nav bar*/
+     /* Add a dark background color with a little bit see-through */
+.navbar {
+    margin-bottom: 0;
+    background-color: #6d3d30;
+    padding-left: 10px;
+    padding-right: 45px;
+    border: 0;
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+/*css for styling navbar-brand or logo*/
+.navbar-brand{
+   font-size: 35px;
+   font-weight: 65px;
+   letter-spacing: 3px;
+   padding-left: 30px;
+   padding-top: 20px;
+   opacity: 1;
+}
+
+.nav{
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 5px;
+   padding-bottom: 8px;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+.navbar li a{
+    border-bottom: 3px solid transparent;
+}
+
+/* On hover, the links will turn black */
+.navbar-nav li a:hover {
+    color: #f00 !important;
+    border-bottom-color: #f00;
+    outline: 0;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: black !important;
+    background-color: transparent !important;
+    border-bottom-color: black;
+    outline: 0;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #6d3d30 ;
+    border-bottom-color: black;
+    background-color: transparent !important;
+}
+
+/* Dropdown links */
+.navbar-nav .dropdown-menu li a {
+    color: #6d3d30 !important;
+}
+.dropdown-menu li a:active {
+    color: #6d3d30 !important;
+    outline: 0;
+}
+.navbar-nav .dropdown-menu li a:active {
+    color: #6d3d30 !important;
+    outline: 0;
+}
+
+/* On hover, the dropdown links will turn black */
+.dropdown-menu li a:hover {
+    background-color: transparent !important;
+    outline: 0;
+}
+.navbar-nav .dropdown-menu li a:hover {
+    background-color: black !important;
+    border-color: transparent;
+    outline: 0;
+}
+
+.navbar-nav .dropdown li a{
+    color: #6d3d30;
+    background-color: transparent !important;
+}
+.navbar-nav .dropdown li a:active{
+    color: #6d3d30;
+    background-color: black !important;
+    outline: 0;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 700px;
+  margin-bottom: 0px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 700px;
+  background-color: transparent;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  min-width: 100%;
+  height: 700px;
+}
+
+/* CUSTOMIZE THE CONTAINERS
+-------------------------------------------------- */
+.bg-gal{
+   margin-top:0px;
+   background-color: #fff;
+   color: #6d3d30;
+   font-size: inherit;
+   height: inherit;
+   overflow: auto;
+}
+.bg-gal a{
+   color: white;
+   text-decoration: none;
+}
+.bg-gal a:hover{
+   color: #15c698;
+}
+.bg-gal a:active, a:visited{
+   outline: 0;
+}
+.bg-gal .scrollup a{
+   color: #6d3d30;
+   text-decoration: none;
+}
+.bg-gal a.scrollup{
+   color: #6d3d30;
+   text-decoration: none;
+}
+.bg-gal .extras a, a:visited{
+   color: #f00;
+   text-decoration: none;
+}
+.bg-gal .extras a:hover{
+   color: #6d3d30;
+}
+
+/*styling for thumbnails*/
+.thumbnail {
+   color: #000031;
+   margin-top: 5px;
+   padding: 1 1 1 1px;
+   display: inline-block;
+   margin-bottom: 0px;
+   line-height: 1.42857143;
+   background-color: #fff;
+   border: 1px solid #6d3d30;
+   border-radius: 4px;
+   text-align: center;
+   outline: 0;
+}
+.thumbnail > img,
+.thumbnail a > img {
+   margin-right: auto;
+   margin-left: auto;
+   height: 95px;
+   width: 175px;
+   background: transparent;
+   outline: 0;
+}
+.thumbnail a:hover > img {
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 100%;
+   max-height: 100%;
+   outline: 0;
+}
+div.thumbnail:hover,
+div.thumbnail:focus,
+div.thumbnail.active {
+   border-color: #f00;
+   outline: 0;
+   opacity: 0.7;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+   border-color: #f00;
+   opacity: 0.7;
+   outline: 0;
+}
+.thumbnail .caption {
+   padding: 9px;
+   color: #333;
+}
+
+/*styling of modal*/
+.modal {
+  position: fixed;
+  top: 70px;
+  right: 350px;
+  bottom: 0px;
+  left: 350px;
+  z-index: 1050;
+  display: none;
+  outline: 0;
+}
+.modal-header {
+  padding: 5px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+  padding: 5px;
+}
+.modal-footer {
+  padding: 0px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+/*styling for image on headers*/
+.headers{
+   position: absolute;
+   margin-top: 125px;
+   margin-left: 450px;
+}
+
+/*styling for buttons in body*/
+.btn-default:hover{
+   color:#333;
+   background-color:#d4d4d4;
+   border-color:#8c8c8c;
+   }
+
+/*styling for glyphicons*/
+ .glyphicon-hand-up{
+    padding-top: 605px;
+    padding-right: 100px;
+    margin-right: 50px;
+    background-color: transparent;
+    height: 200px;
+    width: 0px;
+    position: fixed;
+ }
+
+ /*styling for anchors*/
+.scrollup{
+    color: #fff;
+	height:40px;
+	width:40px;
+	font-size:25px;
+	line-height:30px;
+	text-align:center;
+	text-decoration:none;
+	position:fixed;
+    bottom: 40px;
+	right:150px;
+	opacity:0,5;
+	border-radius:50%;
+	z-index:999;
+}
+a.scrollup:hover{
+	color: #15c698;
+}
+
+ /*styling for footer*/
+.extras{
+     color: #6d3d30;
+     margin-top: 100px;
+     margin-left: 20px;
+     margin-right: 20px;
+     padding-top: 0px;
+}
+
+.footer{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+ }
+.footer a{
+    color: #15c698;
+ }
+
+/*styling gallery container*/
+.gallery{
+     margin-top: 40px;
+     padding-top: 30px;
+     overflow: hidden;
+}
+.row-gal{
+     margin-top: 0px;
+     padding-top: 0px;
+}
+.col-gal{
+     display: inline-block;
+}
+.gal-img{
+        height: 95px;
+        width: 175px;
+        margin-top: 5px;
+        margin-left: 1px;
+        margin-right: 1px;
+        display: inline-block;
+}
+img:hover.gal-img{
+     border: 1px solid #6d3d30;
+     text-decoration: none;
+}
+
+.more_pics{
+    margin-top: 30px;
+}
+a.more_pics , a:active.more_pics, a:visited.more_pics{
+     color: #f00;
+     text-decoration: none;
+     border-color: transparent;
+     outline: 0;
+}
+.more_pics a:hover{
+     color: #6d3d30;
+     text-decoration: none;
+     border-style: none;
+}
+
+/*styling for breadcrumbs */
+.breadcrumb {
+  padding: 8px 15px;
+  margin-top: 120px;
+  margin-bottom: 0px;
+  list-style: none;
+  background-color: black;
+  border-radius: 4px;
+  width: 200px;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 1;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  z-index: 1;
+  color: #fff;
+  content: "/\00a0";
+}
+.breadcrumb > .active {
+  color: #6d3d30;
+}
+.breadcrumb > a {
+  color: #fff;
+}
+.breadcrumb > a:active, a:visited {
+  color: #fff;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 255px) {
+/*styling of navigation bar for media with min-width 255px*/
+   .logo{
+       width: 50px;
+       height: 50px;
+   }
+   .navbar-brand{
+      font-size: 30px;
+      font-weight: 65px;
+      letter-spacing: 2px;
+      padding-left: 10px;
+      padding-top: 15px;
+   }
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .navbar-toggle {
+    margin-right: -40px;
+  }
+  .navbar-nav > li > a {
+    padding-top: 2px;
+    padding-bottom: 7px;
+    line-height: 20px;
+  }
+  .navbar-collapse.collapse {
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible;
+  }
+  .navbar-nav .open .dropdown-menu {
+    width: auto;
+    margin-top: 0;
+  }
+
+/*styling of container for media with min-width 255px*/
+  .bg-gal{
+     margin-top:0px;
+     font-size: 12px;
+     height: inherit;
+     overflow: auto;
+  }
+     .bg-gal .headers{
+        margin-top: 85px;
+        margin-left: 55px;
+     }
+     .bg-gal img.headers{
+       width: 24px;
+       height: 20px;
+     }
+     .bg-gal h1{
+        padding-top: 60px;
+        font-size: 27px;
+        padding-bottom: 40px;
+     }
+     .bg-gal h4{
+        padding-top: 0px;
+        font-size: 14px;
+     }
+     .bg-gal p{
+        padding-left: 0px;
+        padding-right: 0px;
+        align: center;
+     }
+
+  /*styling gallery container*/
+  .gallery{
+       margin-top: 40px;
+       padding-top: 10px;
+       overflow: hidden;
+  }
+  .row-gal{
+       margin-top: 0px;
+       padding-top: 0px;
+  }
+  .col-gal{
+       display: inline-block;
+  }
+  .gal-img{
+          height: 85px;
+          width: 100px;
+          margin-top: 5px;
+          margin-left: 1px;
+          margin-right: 1px;
+          display: inline-block;
+  }
+  .more_pics{
+      margin-top: 20px;
+  }
+
+/*styling for thumbnails*/
+   .thumbnail {
+       background-color: #fff;
+       color: #6d3d30;
+       padding: 0 0 0 0px;
+   }
+   .thumbnail > img,
+   .thumbnail a > img {
+      height: 85px;
+      width: 100px;
+      outline: 0;
+   }
+   .thumbnail a:active, a:visited > img {
+      outline: 0;
+   }
+
+/*styling of modal*/
+   .modal {
+     top: 70px;
+     right: 10px;
+     bottom: 0px;
+     left: 10px;
+   }
+
+/*styling for breadcrumbs */
+   .breadcrumb {
+       padding-left: 5px;
+       margin-top: 135px;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+       width: 125px;
+       font-size: 11px;
+   }
+   .breadcrumb > li + li:before {
+       padding-left: 0px;
+       padding-right: 0px;
+       color: #fff;
+   }
+   .breadcrumb > a{
+       color: #fff;
+   }
+   .breadcrumb > a:hover {
+       color: #f00;
+   }
+   .breadcrumb > a:active, a:visited {
+       color: #fff;
+   }
+
+.scrollup{
+    color: #6d3d30;
+	height:0px;
+	width:0px;
+	font-size:20px;
+	line-height:30px;
+    bottom: 40px;
+	right: 40px;
+}
+ .glyphicon-hand-up{
+    padding-top: 545px;
+    padding-right: 0px;
+    margin-right: 100px;
+    background-color: transparent;
+    height: 200px;
+    width: 0px;
+    position: fixed;
+ }
+
+/*styling for footer */
+.extras{
+     color: #6d3d30;
+     margin-top: 100px;
+     margin-left: 3px;
+     margin-right: 0px;
+}
+
+.footer{
+    margin-left: 17px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+ }
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
